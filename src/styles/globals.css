@@ -3,7 +3,7 @@
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
-  --background-rgb: 214, 219, 220;
+  --background-rgb: 255, 255, 255;
 
   /* COLORS */
   --primary: -webkit-linear-gradient(0, #232526 0%, #414345 100%);
