@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.logo {
+  font-size: var(--font-md);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.rightBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5vw;
+  /* width: min(30%, 400px); */
+}
+
+.quality {
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  width: 100px;
+  font-size: var(--font-sm);
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 15px;
+  }
+
+  .rightBlock {
+    gap: 0;
+  }
+
+  .quality {
+    width: 80px;
+  }
+}

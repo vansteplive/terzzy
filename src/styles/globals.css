@@ -1,0 +1,56 @@
+:root {
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+
+  --background-rgb: 214, 219, 220;
+
+  /* COLORS */
+  --primary: -webkit-linear-gradient(0, #232526 0%, #414345 100%);
+  --gray: #8d8d8d;
+
+  /* FONT SIZES */
+  --font-sm: 0.875rem;
+  --font-md: 2.5rem;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background: rgb(var(--background-rgb));
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  background: var(--primary);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --font-sm: 0.6rem;
+    --font-md: 1.5rem;
+  }
+}

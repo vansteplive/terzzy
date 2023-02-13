@@ -1,0 +1,27 @@
+.btn {
+  padding: 17px 36px;
+  border: none;
+  background: linear-gradient(to right, var(--gray) 1px, transparent 1px) 0 0,
+    linear-gradient(to right, var(--gray) 1px, transparent 1px) 0 100%,
+    linear-gradient(to left, var(--gray) 1px, transparent 1px) 100% 0,
+    linear-gradient(to left, var(--gray) 1px, transparent 1px) 100% 100%,
+    linear-gradient(to bottom, var(--gray) 1px, transparent 1px) 0 0,
+    linear-gradient(to bottom, var(--gray) 1px, transparent 1px) 100% 0,
+    linear-gradient(to top, var(--gray) 1px, transparent 1px) 0 100%,
+    linear-gradient(to top, var(--gray) 1px, transparent 1px) 100% 100%;
+  color: var(--gray);
+  background-repeat: no-repeat;
+  background-size: 10px 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-sizing: content-box;
+  width: fit-content;
+  font-size: var(--font-sm);
+}
+
+@media (max-width: 768px) {
+  .btn {
+    padding: 7px 12px;
+    background-size: 5px 5px;
+  }
+}
