@@ -12,6 +12,9 @@
   /* FONT SIZES */
   --font-sm: 0.875rem;
   --font-md: 2.5rem;
+
+  /* BORDER RADIUS */
+  --radius-sm: 25px;
 }
 
 * {

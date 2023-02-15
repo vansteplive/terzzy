@@ -1,0 +1,13 @@
+.container {
+    position: relative;
+    box-sizing: content-box;
+}
+
+.picture {
+    position: absolute;
+    transition: 0.3s;
+}
+
+.picture:hover {
+    transform: scale(1.01);
+}
