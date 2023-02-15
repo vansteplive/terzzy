@@ -1,4 +1,6 @@
 import Head from "next/head";
+import {Picture, PictureWithSlider} from "@/components";
+import MonkeyNftSrc from '@/assets/images/monkey-nft.png';
 
 export default function Home() {
   return (
@@ -9,7 +11,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main></main>
+      <main>
+          <PictureWithSlider position="vertical">
+              <Picture src={MonkeyNftSrc} alt="monkey" width={270} height={330} />
+              <Picture src={MonkeyNftSrc} alt="monkey" width={270} height={330} />
+              <Picture src={MonkeyNftSrc} alt="monkey" width={270} height={330} />
+              <Picture src={MonkeyNftSrc} alt="monkey" width={270} height={330} />
+          </PictureWithSlider>
+      </main>
     </>
   );
 }

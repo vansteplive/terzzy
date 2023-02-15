@@ -1,0 +1,8 @@
+.picture {
+    border-radius: var(--radius-sm);
+    border: 1px solid black;
+}
+
+.picture:hover {
+    cursor: pointer;
+}
