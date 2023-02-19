@@ -1,0 +1,14 @@
+.main {
+    display: flex;
+    gap: 3rem; /* 48px */
+    overflow-x: auto;
+}
+
+.main::-webkit-scrollbar {
+    display:none;
+}
+
+.starIcon {
+    margin-top: auto;
+    margin-bottom: auto;
+}

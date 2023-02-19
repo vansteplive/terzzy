@@ -1,0 +1,77 @@
+.container {
+    --slider-width: 38rem; /* 608px */
+    --sm-offset: 0.3rem; /* 5px */
+}
+
+.sliderContainer {
+    width: var(--slider-width);
+    height: 21.75rem; /* 350px */
+    padding-top: 2rem; /* 32px */
+    padding-left: var(--sm-offset);
+    overflow-y: hidden;
+}
+
+.imageBlock {
+    display: flex;
+    height: 26rem;
+    overflow-y: hidden;
+    padding-top: 0.4rem; /* 6.4px */
+    padding-left: 0.1rem; /* 1.6px */
+}
+
+.firstPicture {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sm-offset);
+}
+
+.secondPicture {
+    height: 20rem;
+    transform: translateY(1.67rem);
+}
+
+.blockWithPictures {
+    display: flex;
+    gap: 2rem; /* 32px */
+}
+
+.nft {
+    font-size: 2.875rem; /* 46px */
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.bottomBlock {
+    width: 80rem;
+    position: relative;
+}
+
+.bottomBlock > h2 {
+    font-size: 10rem; /* 160px */
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.aboutUsBtn {
+    /*height: 3rem;*/
+    width: 26rem;
+}
+
+.descriptionBlock {
+    display: flex;
+    gap: 2.5rem; /* 40px */
+}
+
+.descriptionText {
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.35rem; /* 21.6px */
+    letter-spacing: 0.035em;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.starIcon {
+    position: absolute;
+    left: 32.5rem; /* 520px */
+    bottom: 90%;
+}
