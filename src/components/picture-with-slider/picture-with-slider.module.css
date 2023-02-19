@@ -5,7 +5,7 @@
 
 .picture {
     position: absolute;
-    transition: 0.3s;
+    transition: var(--animation-timing);
 }
 
 .picture:hover {

@@ -11,6 +11,7 @@ type NavLinkProps = LinkProps & {
 
 export const NavLink: FC<NavLinkProps> = ({activeClassname, children, className, href, ...props }) => {
     const { pathname } = useRouter();
+    console.log({ pathname, href, children, result: pathname === href });
     const clsName = useMemo(() => (
         clsx(className, { [activeClassname!]: pathname === href && activeClassname })
     ), [activeClassname, className, href, pathname])

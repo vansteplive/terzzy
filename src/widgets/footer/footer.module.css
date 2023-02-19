@@ -17,10 +17,11 @@
 }
 
 .linkList > li > a {
+    transition: var(--animation-timing);
     color: var(--gray);
 }
 
-.activeLink {
+.linkList > li > .activeLink {
     color: #000;
 }
 
