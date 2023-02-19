@@ -15,12 +15,23 @@
 
   /* BORDER RADIUS */
   --radius-sm: 25px;
+
+  --animation-timing: 0.3s;
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.appContent {
+  border-bottom: 1px solid;
+  min-height: calc(100vh - 13.75rem);
 }
 
 html,
@@ -37,7 +48,6 @@ a {
   text-decoration: none;
 }
 
-a,
 p,
 span,
 h1,
