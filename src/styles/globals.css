@@ -23,6 +23,15 @@
   margin: 0;
 }
 
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.appContent {
+  border-bottom: 1px solid;
+  min-height: calc(100vh - 13.75rem);
+}
+
 html,
 body {
   max-width: 100vw;

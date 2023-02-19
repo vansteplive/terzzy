@@ -1,0 +1,26 @@
+.container {
+    height: 6.875rem; /* 110px */
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.linkList {
+    display: flex;
+    gap: 2rem;
+}
+
+.linkList > li {
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.linkList > li > a {
+    color: var(--gray);
+}
+
+.activeLink {
+    color: #000;
+}
+

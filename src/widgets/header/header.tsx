@@ -2,15 +2,16 @@ import Link from "next/link";
 import { useMemo } from "react";
 import clsx from "clsx";
 
-import { Button } from "../button";
+import { Button } from "../../components/button";
 import styles from "./header.module.css";
+import {clashDisplay} from "@/shared/constants";
 
 type HeaderProps = {
   className?: string;
 };
 
 export default function Header({ className }: HeaderProps) {
-  const clsName = useMemo(() => clsx(styles.header, className), [className]);
+  const clsName = useMemo(() => clsx(styles.header, clashDisplay.className), [className]);
 
   return (
     <header className={clsName}>

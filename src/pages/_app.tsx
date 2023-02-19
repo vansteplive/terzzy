@@ -1,48 +1,17 @@
-import { Header } from "@/components/";
+import { Header, Footer } from "@/widgets";
 import type { AppProps } from "next/app";
-import localFont from "@next/font/local";
 import "@/styles/globals.css";
-
-const clashDisplay = localFont({
-  src: [
-    {
-      path: "../assets/fonts/ClashDisplay-Bold.woff2",
-      weight: "bold",
-      style: "normal",
-    },
-    {
-      path: "../assets/fonts/ClashDisplay-Extralight.woff2",
-      weight: "200",
-      style: "normal",
-    },
-    {
-      path: "../assets/fonts/ClashDisplay-Light.woff2",
-      weight: "300",
-      style: "normal",
-    },
-    {
-      path: "../assets/fonts/ClashDisplay-Medium.woff2",
-      weight: "500",
-      style: "normal",
-    },
-    {
-      path: "../assets/fonts/ClashDisplay-Regular.woff2",
-      weight: "normal",
-      style: "normal",
-    },
-    {
-      path: "../assets/fonts/ClashDisplay-Semibold.woff2",
-      weight: "600",
-      style: "normal",
-    },
-  ],
-});
+import {clashDisplay} from "@/shared/constants";
+import styles from './index.module.css';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Header className={clashDisplay.className} />
-      <Component className={clashDisplay.className} {...pageProps} />
+      <Header />
+      <div className="appContent">
+          <Component className={clashDisplay.className} {...pageProps} />
+      </div>
+      <Footer />
     </>
   );
 }
