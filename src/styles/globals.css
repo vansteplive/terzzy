@@ -1,8 +1,4 @@
 :root {
-  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
-    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
-    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
-
   --background-rgb: 255, 255, 255;
 
   /* COLORS */
@@ -19,10 +15,18 @@
   --animation-timing: 0.3s;
 }
 
+@media (max-width: 768px) {
+  :root {
+    --font-sm: 0.6rem;
+    --font-md: 1.5rem;
+  }
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Clash Display', sans-serif;
 }
 
 *::-webkit-scrollbar {
@@ -59,11 +63,4 @@ h6 {
   background: var(--primary);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-@media (max-width: 768px) {
-  :root {
-    --font-sm: 0.6rem;
-    --font-md: 1.5rem;
-  }
 }
