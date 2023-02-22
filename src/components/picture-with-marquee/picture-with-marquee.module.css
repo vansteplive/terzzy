@@ -1,0 +1,21 @@
+.container {
+    position: relative;
+    overflow: hidden;
+    height: var(--height);
+    border-radius: var(--radius-sm);
+}
+
+.marquee {
+    transform: translate(-10%, -120%) rotate(30deg);
+    /* transform: rotate(45deg); */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    width: 200%;
+    background: #3C231E;
+}
+
+.marquee .overlay::before,
+.marquee .overlay::after {
+    background: none !important;
+}
