@@ -42,11 +42,16 @@
 }
 
 .bottomBlock {
-    width: 80rem;
     position: relative;
+    display: flex;
+    gap: 5rem;
 }
 
-.bottomBlock > h2 {
+.bottomBlockChildFirst {
+    width: 80rem;
+}
+
+.bottomBlockChildFirst > h2 {
     font-size: 10rem; /* 160px */
     font-weight: 600;
     text-transform: uppercase;
@@ -74,4 +79,77 @@
     position: absolute;
     left: 32.5rem; /* 520px */
     bottom: 90%;
+}
+
+.secondStarIcon {
+    transform: translateX(250%);
+}
+
+.additionalPicturesContainer {
+    --picture-width: 270px;
+    display: flex;
+    flex-direction: column;
+    width:  45rem;
+    transform: translateY(1.67rem);
+}
+
+.additionalPicturesDescriptionContainer {
+    width: 48rem;
+    display: flex;
+    gap: 3rem;
+}
+
+.additionalPicturesDescriptionContainer > p {
+    display: inline-block;
+    padding-top: 1.5rem;
+    font-size: 1.125rem;
+    letter-spacing: 0.035em;
+    line-height: 1.4rem;
+    text-transform: uppercase;
+}
+
+.additionalPictures {
+    display: flex;
+    gap: 2rem;
+}
+
+.furnitureDescription {
+    display: flex;
+    gap: 1.75rem;
+}
+
+.furnitureDescription > .descriptionText {
+    margin-top: 0.5rem;
+}
+
+.furniTitle {
+    font-weight: 600;
+    font-size: 2.875rem;
+    text-transform: uppercase;
+}
+
+.bottomBlockChildSecond {
+    width: 66.5rem;
+}
+
+.marquee {
+    position: absolute;
+    top: -383px;
+    left: 2000px;
+}
+
+.marqueeText {
+    font-size: 4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: 30px;
+    -webkit-text-fill-color: #fff;
+}
+
+.furnitureImg {
+    transform: translateY(-13px);
+}
+
+.orderBtn {
+    width: 200px;
 }
