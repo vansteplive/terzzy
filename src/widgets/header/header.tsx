@@ -1,9 +1,9 @@
 import Link from "next/link";
 import clsx from "clsx";
 
-import { Button } from "../../components/button";
+import { Button } from "@/components";
 import styles from "./header.module.css";
-import {clashDisplay} from "@/shared/constants";
+import { clashDisplay } from "@/shared/constants";
 
 export default function Header() {
   const clsName = clsx(styles.header, clashDisplay.className);

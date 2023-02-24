@@ -1,0 +1,23 @@
+.box {
+  background-color: #d9d9d9;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  margin-right: 50px;
+}
+.content {
+  display: flex;
+  box-sizing: content-box;
+  overflow-x: auto;
+  align-items: center;
+}
+.text {
+  font-weight: 600;
+  font-size: 465px;
+  line-height: 84%;
+}
+.secondString {
+  display: flex;
+}
+.buttons {
+  margin-top: 22px;
+  margin-left: 90px;
+}
