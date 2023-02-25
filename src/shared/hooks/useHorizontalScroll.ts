@@ -14,7 +14,7 @@ export function useHorizontalScroll<T extends HTMLElement = HTMLElement>(
     const setRef = useCallback((el: T | null) => {
         scrollRef(el);
         elRef.current = el;
-    }, []);
+    }, [scrollRef]);
 
     useEffect(() => {
         const el = elRef.current;
@@ -27,6 +27,6 @@ export function useHorizontalScroll<T extends HTMLElement = HTMLElement>(
             el.addEventListener("wheel", onWheel);
             return () => el.removeEventListener("wheel", onWheel);
         }
-    }, []);
+    }, [scrollDuration, scrollTo]);
     return setRef;
 }

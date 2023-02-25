@@ -1,0 +1,59 @@
+.message {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .message .bubble-container {
+    font-size: 14px;
+    display: flex;
+  }
+  
+  .message.mine .bubble-container {
+    justify-content: flex-end;
+  }
+  
+  .message.start .bubble-container .bubble {
+    /* margin-top: 10px; */
+    border-top-left-radius: 20px;
+  }
+  
+  .message.end .bubble-container .bubble {
+    border-bottom-left-radius: 20px;
+    /* margin-bottom: 10px; */
+  }
+  
+  .message.mine.start .bubbleContainer .bubble {
+    margin-top: 10px;
+    border-top-right-radius: 20px;
+  }
+  
+  .message.mine.end .bubbleContainer .bubble {
+    border-bottom-right-radius: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .message .bubbleContainer .bubble {
+    position: absolute;
+    right: 160px;
+    bottom: 135px;
+    display: flex;
+    justify-content: center;
+    margin: px 0px;
+    background-color: black;
+    color: white;
+    padding: 20px 25px 20px 25px;
+    border-radius: 20px;
+    max-width: 375px;
+    height: auto;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 2px;
+    line-height: 111.66%;
+    letter-spacing: -0.005em;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  
+  
