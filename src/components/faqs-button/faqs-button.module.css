@@ -2,6 +2,7 @@
   background-color: transparent;
   cursor: pointer;
   border-radius: var(--radius-md);
+  border: 1px solid black;
   color: black;
   align-items: center;
   height: 58px;
@@ -10,7 +11,8 @@
   margin-bottom: 15px;
   margin-right: 35px;
 }
-.btn:hover {
+.btn:hover,
+.active {
   background-color: #ed0000;
   color: white;
 }

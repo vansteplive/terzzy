@@ -18,6 +18,8 @@
   display: flex;
 }
 .buttons {
+  position: relative;
+  width: 100%;
   margin-top: 22px;
   margin-left: 90px;
 }
