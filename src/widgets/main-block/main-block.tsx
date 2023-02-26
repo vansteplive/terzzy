@@ -15,7 +15,7 @@ export default function MainBlock() {
             <div className={styles.imageBlock}>
                 <div className={styles.sliderContainer}>
                     <PictureWithSlider position="vertical">
-                        <Picture src={MonkeyNftSrc} alt="monkey" width={530} height={575} />
+                        <Picture src={MonkeyNftSrc} className={styles.firstSlide} alt="monkey" width={530} height={575} />
                         <Picture src={MonkeyNftSrc} alt="monkey" width={530} height={575} />
                         <Picture src={MonkeyNftSrc} alt="monkey" width={530} height={575} />
                         <Picture src={MonkeyNftSrc} alt="monkey" width={530} height={575} />
@@ -82,7 +82,7 @@ export default function MainBlock() {
                             <p className={styles.marqueeText}>
                                 terzzy
                             </p>
-                        </PictureWithMarquee>
+                    </PictureWithMarquee>
                     <div className={styles.furnitureDescription}>
                         <h3 className={styles.furniTitle}>Furniture</h3>
                         <p className={styles.descriptionText}>
