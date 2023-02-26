@@ -1,6 +1,6 @@
 .main {
     display: flex;
-    gap: 3rem; /* 48px */
+    /* gap: 3rem; /* 48px */
     overflow-x: auto;
 }
 
@@ -9,6 +9,5 @@
 }
 
 .starIcon {
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: auto 0 auto 30px;
 }

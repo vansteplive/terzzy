@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import {
     Children,
     cloneElement,
@@ -12,11 +13,12 @@ type PictureWithSliderProps = {
     position: 'vertical' | 'horizontal'
     children: ReactElement<PictureProps> | ReactElement<PictureProps>[];
     offset?: number;
+    className?: string;
 }
 
 const OFFSET = 10;
 
-export default function PictureWithSlider({ children, offset = OFFSET }: PictureWithSliderProps) {
+export default function PictureWithSlider({ children, offset = OFFSET, className }: PictureWithSliderProps) {
     const [isOpenSlider, setIsOpenSlider] = useState(false);
     const containerRef = useRef<HTMLDivElement>(null);
 
@@ -29,12 +31,12 @@ export default function PictureWithSlider({ children, offset = OFFSET }: Picture
     }, [children, offset]);
 
     return (
-        <div className={styles.container} ref={containerRef}>
+        <div className={clsx(styles.container, className)} ref={containerRef}>
             {Children.map(children, (child, index) => {
                 const childLength = Children.count(children);
                 const updatedWidth = Number(child.props.width) - (offset * 2 * index);
                 return cloneElement(child, {
-                    className: styles.picture,
+                    className: clsx(styles.picture, child.props.className),
                     style: {
                         left: (Number(child.props.width) - updatedWidth) / 2,
                         bottom: offset * index + 5,
