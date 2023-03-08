@@ -1,14 +1,85 @@
 .main {
-    display: flex;
-    gap: 3rem; /* 48px */
-    overflow-x: auto;
+  display: flex;
+  gap: 3rem; /* 48px */
+  overflow-x: auto;
 }
 
 .main::-webkit-scrollbar {
-    display:none;
+  display: none;
 }
 
+.block {
+  width: 1000000px;
+  display: flex;
+}
+.sectionOnePlusThree {
+  display: flex;
+}
+.sectionThree {
+  display: flex;
+  margin-left: 65px;
+}
 .starIcon {
-    margin-top: auto;
-    margin-bottom: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.brandIcon {
+  display: flex;
+  display: inline-block;
+  justify-content: space-between;
+  margin-right: 30px;
+  border: 1pm solid;
+}
+.brandLogo {
+  background-color: rgb(156, 155, 155);
+  border: 3px;
+  width: 730px;
+  height: 135px;
+  margin-bottom: 21px;
+}
+
+.title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: linear-gradient(90deg, #232526 0%, #414345 100%);
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.secondString {
+  display: flex;
+  margin-top: 30px;
+}
+.secondPhotos {
+  margin-left: 40px;
+}
+.mainText {
+  background-color: linear-gradient(90deg, #232526 0%, #414345 100%);
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 57px;
+}
+.textClothing {
+  max-width: 480px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+  color: black;
+}
+.textCharacter {
+  max-width: 690px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+  color: black;
+  margin-top: 25px;
+}
+.flippedText {
+  transform: rotate(-90deg);
 }
